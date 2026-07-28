@@ -1,0 +1,6 @@
+local leaderstats = game.Players.PlayerAdded:Connect(function(player)
+	local leaderstats = player:WaitForChild("leaderstats")
+	local Money = leaderstats:WaitForChild("Money")
+
+	Money.Value += 1000
+end)
